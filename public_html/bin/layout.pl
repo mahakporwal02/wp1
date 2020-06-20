@@ -117,7 +117,7 @@ sub layout_header {
 <div id="container">
     <div class="deprecated">
       This tool has been deprecated and will be shut down on October 15, 2020.
-      Please use the <a href="wp1.openzim.org">updated version</a> instead.
+      Please use the <a href="https://wp1.openzim.org">updated version</a> instead.
       <br>
       Report missing features or bugs on
       <a href="https://en.wikipedia.org/wiki/Wikipedia_talk:Version_1.0_Editorial_Team/Index">English Wikipedia</a>.
