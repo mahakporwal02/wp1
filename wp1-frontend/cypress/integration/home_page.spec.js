@@ -20,13 +20,13 @@ describe('the home page', () => {
   it('project-table for Alien displayed', () => {
     cy.visit('/');
 
-    cy.get('.search').type('Alien');
+    cy.get('.search').type('Water');
 
     cy.get('.results').should('be.visible');
     cy.get('.results')
       .children('li')
       .eq(0)
-      .should('contain.text', 'Alien')
+      .should('contain.text', 'Water')
       .click();
 
     cy.get('table').should('be.visible')
