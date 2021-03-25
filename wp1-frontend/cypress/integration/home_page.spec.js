@@ -17,7 +17,7 @@ describe('the home page', () => {
       .should('contain.text', 'Water');
   });
 
-  it('project-table for Alien displayed', () => {
+  it.only('project-table for Alien displayed', () => {
     cy.visit('/');
 
     cy.get('.search').type('Water');
@@ -25,12 +25,12 @@ describe('the home page', () => {
     cy.get('.results').should('be.visible');
     cy.get('.results')
       .children('li')
-      .eq(0)
+      .eq(1)
       .should('contain.text', 'Water')
       .click();
 
     cy.get('table').should('be.visible')
       .eq(0)
-      .should('contain.text','Alien articles by quality and importance')
+      .should('contain.text','Water articles by quality and importance')
   });
 });
