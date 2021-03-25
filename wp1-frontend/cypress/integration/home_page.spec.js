@@ -27,7 +27,8 @@ describe('the home page', () => {
       .children('li')
       .eq(1)
       .should('contain.text', 'Water')
-      .click();
+    
+    cy.visit('/#/project/Water')
 
     cy.get('table').should('be.visible')
       .eq(0)
